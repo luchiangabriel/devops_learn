@@ -13,7 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd python_env
-				apt-install pipx
+				apt-get install pipx
                 pipx inject ipython -r requirements.txt
                 '''
             }
