@@ -31,8 +31,8 @@ pipeline {
             steps {
                 echo "Testing.."
                 sh '''
-                cd python_env
                 . $VENV_DIR/bin/activate
+                cd python_env
                 python3 hello.py
                 python3 hello.py --name=Gabi
                 '''
