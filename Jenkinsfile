@@ -13,9 +13,8 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd python_env
-				apt-get install pipx
-                pipx inject ipython -r requirements.txt
                 '''
+                pip install -r requirements.txt
             }
         }
         stage('Test') {
