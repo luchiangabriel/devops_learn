@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage('Setup Python Environment') {
             steps {
-                echo 'Setting up Python virtual environment...'
+                echo 'Create and setting up python virtual environment...'
                 sh '''
                     python3 -m venv $VENV_DIR
                     . $VENV_DIR/bin/activate
