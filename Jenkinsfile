@@ -11,7 +11,7 @@ pipeline {
     
     environment {
         // Set up a virtual environment path, if needed
-        VENV_DIR = '.venv'
+        VENV_DIR = '.venv' 
     }
     
     stages {
